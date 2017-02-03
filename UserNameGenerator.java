@@ -22,6 +22,7 @@ public class UserNameGenerator {
 
 		String firstPart = first.substring(0, 2);
 
+		//TODO: fix this!
 		//what happens if the last name is shorter than 5 characters?
 		String lastPart = last.substring(0, 5);
 

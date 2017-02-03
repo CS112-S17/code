@@ -7,7 +7,6 @@ import java.util.Random;
 public class Coin {
 
 	//data members
-	// private double value;
 
 	//true means heads and false means tails
 	private boolean isHeads;
