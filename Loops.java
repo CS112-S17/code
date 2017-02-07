@@ -18,8 +18,11 @@ public class Loops {
 
 		//uses the post-increment operator i++
 		//i++ is the same as i = i + 1
-		
-		//TODO: complete loop
+		for(int i = 0; i < SUM_MAX; i++) {
+			//add number
+			sum1 = sum1 + i;
+		}
+
 
 		System.out.println("Sum of numbers 0-20: " + sum1);
 
@@ -31,7 +34,9 @@ public class Loops {
 
 		//add 2 to i each iteration
 
-		//TODO: complete loop
+		for(int i = 0; i < SUM_MAX; i  = i + 2) {
+			sum2 += i;
+		}
 
 		System.out.println("Sum of even numbers 0-20: " + sum2);
 
@@ -44,8 +49,12 @@ public class Loops {
 
 		//this loop will execute twice as many 
 		//times as the previous
+		for(int i = 0; i < SUM_MAX; i++) {
+			if(i%2 == 0) {
+				sum3 += i;
+			}
+		}
 
-		//TODO: complete loop
 
 		System.out.println("Sum of even numbers 0-20: " + sum3);
 
@@ -54,9 +63,14 @@ public class Loops {
 
 		//use a while loop to sum the numbers from 0-20
 		int sum4 = 0;
+		
 		int num = 0; //initialize control varaible
 
-		//TODO: complete loop
+		while(num < SUM_MAX) {
+			sum4 += num;
+			num++;
+		}
+
 
 		System.out.println("Sum of numbers 0-20: " + sum4);
 
@@ -71,7 +85,16 @@ public class Loops {
 		//0123
 		//01234
 
-		//TODO: complete loop
+
+		for(int i = 0; i < 5; i++) {
+
+			for(int j = 0; j <= i; j++) {
+
+				System.out.print(j);
+			}
+			System.out.println();
+		}
+
 
 		//separating the output
 		System.out.println("\n***************\n");
@@ -87,6 +110,9 @@ public class Loops {
 		//i-- is the same as i = i - 1
 
 		//TODO: complete loop
+
+
+
 	}
 
 }

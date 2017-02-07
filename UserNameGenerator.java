@@ -24,12 +24,23 @@ public class UserNameGenerator {
 
 		//TODO: fix this!
 		//what happens if the last name is shorter than 5 characters?
-		String lastPart = last.substring(0, 5);
+		String lastPart = null;
+		if(last.length() <= 5) {
+			lastPart = last;			
+		} else {
+			lastPart = last.substring(0, 5);
+		}
+
 
 		Random r = new Random();
 		int number = r.nextInt(100)+1;
 
-		return firstPart + middle + lastPart + number;
+		String result = firstPart + middle + lastPart + number;
+		result = result.toLowerCase();
+
+		return result;
+
+
 
 
 	}
