@@ -109,8 +109,12 @@ public class Loops {
 		//note, uses the post-decrement operator
 		//i-- is the same as i = i - 1
 
-		//TODO: complete loop
-
+		for(int i = 5; i > 0; i--) {
+			for(int j = 0; j < i; j++) {
+				System.out.print(j);
+			}
+			System.out.println();
+		}
 
 
 	}
