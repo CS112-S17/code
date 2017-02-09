@@ -44,7 +44,9 @@ public class ArrayListExample {
 
 		//add numbers to list and print result
 
-		numbers.add(3);
+
+		Integer x = new Integer(3);
+		numbers.add(x);
 		numbers.add(7);
 		numbers.add(3);
 		numbers.add(19);
@@ -53,11 +55,9 @@ public class ArrayListExample {
 		//Integer it is automatically converted to 
 		//an int
 		//TODO: retrieve first item
-		for(int number: numbers) {
+		for (int number: numbers) {
 			System.out.println(number);
 		}
-
-
 
 		//separating the output
 		System.out.println("\n***************\n");
@@ -70,14 +70,37 @@ public class ArrayListExample {
 		//the Name class is in the same directory
 		//and compiled at the same time.		
 
-		//TODO: create array list of names and print result
+
+		Name n1 = new Name("Bob", "Smith", 'X');
+		Name n2 = new Name("Sally", "Jones", 'P');
+		Name n3 = new Name("Herb", "Zuniga", 'R');
+
+		ArrayList<Name> names = new ArrayList<Name>();
+
+		names.add(n1);
+		names.add(n2);
 
 
-		//should print false
 
-		//TODO: demonstrate contains method
+		for(int i = 0; i < names.size(); ++i) {
+			Name tmpName = names.get(i);
+			System.out.println(tmpName.toString());
+		}
 
+		n1.setLast("Jones");
 
+		for(Name name: names) {
+			System.out.println(name);
+		}
+
+	/*		
+		if(names.contains(n3)) {
+			System.out.println("names contains: " + n3.toString());
+		} else {
+			System.out.println("names does not contain: " + n3.toString());
+		}
+	*/
+		
 		
 	}
 

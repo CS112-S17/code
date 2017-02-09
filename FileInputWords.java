@@ -29,11 +29,13 @@ public class FileInputWords {
 
 		} catch(FileNotFoundException fnf) {
 			System.out.println("File not found.");
-			System.out.println(fnf.getMessage());
-			//fnf.printStackTrace();
-			System.exit(1);
+			//System.out.println(fnf.getMessage());
+			fnf.printStackTrace();
+			//System.exit(1);
 		}
 
+		System.out.println("Thank you for playing...");
+		//REST OF PROGRAM
 
 	}
 

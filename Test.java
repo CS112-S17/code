@@ -14,6 +14,9 @@ public class Test {
 		//i = i + 1;
 
 
+		System.out.println("value of i: expected is 4 and actual is: " + i);
+
+
 
 	}
 

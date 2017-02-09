@@ -44,6 +44,7 @@ public class Name {
 	}	
 
 	//print/display
+
 	public String toString() {
 		if(middle == '-') {
 			return this.first + " " + this.last;	

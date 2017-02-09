@@ -39,6 +39,9 @@
 					//read in a name and store in a list
 					String name = input.next();
 					names.add(name);
+					//names.add(input.next());
+
+
 					//read in a score and store in a list
 					int score = input.nextInt();
 					scores.add(score);
@@ -48,6 +51,9 @@
 				System.out.println("File not found.");
 				System.exit(1);
 			}
+
+			
+
 
 			//print the contents of both lists
 			//if one list is longer than the other the last
