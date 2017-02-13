@@ -8,7 +8,7 @@ public class UserNameGeneratorDriver {
 	public static void main(String[] args) {
 		UserNameGenerator gen = new UserNameGenerator();
 		
-		Name n = new Name("Mickey", "Mouse", 'K');
+		Name n = new Name("Mickey", "Mey", 'K');
 
 		String username = gen.generateUserName(n);
 

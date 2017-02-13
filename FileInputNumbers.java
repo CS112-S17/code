@@ -26,6 +26,7 @@ public class FileInputNumbers {
 				//add each number to the ArrayList				
 				int number = input.nextInt();				
 				numbers.add(number);
+				//numbers.add(input.nextInt());
 			}
 
 

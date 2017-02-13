@@ -15,11 +15,18 @@ public class ArrayListExample {
 		//the list using a standard for loop.
 		ArrayList<String> words = new ArrayList<String>();
 
-		//TODO: add words to list
+		//add words to list
+		words.add("Hello");
+		words.add("Goodbye");
+		words.add("Computer Science!");
+
 
 		//note, this loop uses the Java increment operator
-
-		//TODO: print contents of list
+		//print contents of list
+		for(int i = 0; i < words.size(); i++) {
+			String word = words.get(i);
+			System.out.println(word);
+		}
 
 
 		//separating the output
@@ -35,14 +42,22 @@ public class ArrayListExample {
 		ArrayList<Integer> numbers = new ArrayList<Integer>();
 
 
-		//TODO: add numbers to list and print result
+		//add numbers to list and print result
 
+
+		Integer x = new Integer(3);
+		numbers.add(x);
+		numbers.add(7);
+		numbers.add(3);
+		numbers.add(19);
 
 		//Even though the get method returns an
 		//Integer it is automatically converted to 
 		//an int
 		//TODO: retrieve first item
-
+		for (int number: numbers) {
+			System.out.println(number);
+		}
 
 		//separating the output
 		System.out.println("\n***************\n");
@@ -55,14 +70,37 @@ public class ArrayListExample {
 		//the Name class is in the same directory
 		//and compiled at the same time.		
 
-		//TODO: create array list of names and print result
+
+		Name n1 = new Name("Bob", "Smith", 'X');
+		Name n2 = new Name("Sally", "Jones", 'P');
+		Name n3 = new Name("Herb", "Zuniga", 'R');
+
+		ArrayList<Name> names = new ArrayList<Name>();
+
+		names.add(n1);
+		names.add(n2);
 
 
-		//should print false
 
-		//TODO: demonstrate contains method
+		for(int i = 0; i < names.size(); ++i) {
+			Name tmpName = names.get(i);
+			System.out.println(tmpName.toString());
+		}
 
+		n1.setLast("Jones");
 
+		for(Name name: names) {
+			System.out.println(name);
+		}
+
+	/*		
+		if(names.contains(n3)) {
+			System.out.println("names contains: " + n3.toString());
+		} else {
+			System.out.println("names does not contain: " + n3.toString());
+		}
+	*/
+		
 		
 	}
 
