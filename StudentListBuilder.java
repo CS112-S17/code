@@ -8,7 +8,7 @@ import java.io.FileNotFoundException;
 
 import java.util.Scanner;
 
-public class StudentListBuilder {
+public class StudentListBuilder {	
 
 	/**
 		Method takes as input a filename and returns a StudentList
@@ -26,12 +26,16 @@ public class StudentListBuilder {
 		//read in each line of file
 		try(Scanner input = new Scanner(inputFile)) {
 			input.useDelimiter(",|\n");
+
 			while(input.hasNext()) {
 				String name = input.next();
 				int score = input.nextInt();
 
 				//	create a Student
+				Student student = new Student(name, score);
 				//	add Student to list
+				list.addStudent(student);
+				
 			}
 
 

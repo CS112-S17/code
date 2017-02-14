@@ -30,10 +30,23 @@ public class Student {
 		return "Name: " + this.name + " Score: " + this.score;
 	}
 
+/*
+	public boolean equals(Student other) {
+
+		if(this.score == other.getScore() &&
+			this.name.equals(other.getName())) { //names are the same and scores are the same
+			return true;
+		} 
+		return false;		
+	}
+*/
+	
 	//constructor
 	public Student(String name, int score) {
 		this.name = name;
 		this.score = score;
 	}
+
+
 
 }
