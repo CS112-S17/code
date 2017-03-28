@@ -1,4 +1,4 @@
-public abstract class Student extends USFPerson {
+public class Student extends USFPerson {
 
 	private String major;
 	private int year;
@@ -13,9 +13,9 @@ public abstract class Student extends USFPerson {
 
 	}
 
-	// public double getEmailQuota() {
-	// 	return 32;
-	// }
+	public double getEmailQuota() {
+		return 32;
+	}
 
 	public String getMajor() {
 		return this.major;

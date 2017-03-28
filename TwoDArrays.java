@@ -85,7 +85,7 @@ public class TwoDArrays {
 		//initialize
 		double highest = scores[0][0];
 
-		for(int r = 0; r < scores.length; r++) {
+		// for(int r = 0; r < scores.length; r++) {
 		// 	for(int c = 0; c < scores[r].length; c++) {				
 		// 		if(scores[r][c] > highest) {
 		// 			highest = scores[r][c];
