@@ -55,6 +55,8 @@ public class NumberList {
 			for(int i = 0; i < count - 1; i++) {
 				numbers[i] = numbers[i+1];
 			}
+			//reset the last item
+			numbers[count-1] = 0;
 			//decrement count
 			count--;		
 		}
@@ -63,11 +65,12 @@ public class NumberList {
 
 	public String toString() {
 
-		String returnVal = "";
+		String returnVal = "{";
 		for(int i = 0; i < count; i++) {
-			returnVal = returnVal + numbers[i] + " ";
+			returnVal = returnVal + numbers[i] + ",";
 		}
-
+		
+		//add close }
 		return returnVal;
 
 	}

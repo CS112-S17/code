@@ -1,51 +1,44 @@
-/**
-	A class to hold information about a single student.
-	A student has a name and a score.
-	@author Sami Rollins
-**/
-public class Student {
+public abstract class Student extends USFPerson {
 
-	//data members
-	private String name;
-	private int score;
+	private String major;
+	private int year;
+	private double gpa;
 
-	//methods
-	//getters for both data members
-	public String getName() {
-		return this.name;
+	public Student(String name, int id, String major, int year, double gpa) {
+		super(name, id);
+
+		this.major = major;
+		this.year = year;
+		this.gpa = gpa;
+
 	}
 
-	public int getScore() {
-		return this.score;
+	// public double getEmailQuota() {
+	// 	return 32;
+	// }
+
+	public String getMajor() {
+		return this.major;
 	}
 
-	//a setter for generous professors who are 
-	//willing to modify student scores
-	public void setScore(int score) {
-		this.score = score;
+	public int getYear() {
+		return this.year;
 	}
 
-	//returns a string representation of the object
+	public double getGpa() {
+		return this.gpa;
+	}
+
 	public String toString() {
-		return "Name: " + this.name + " Score: " + this.score;
+
+		//String name = super.getName();
+		return super.toString() +
+				" Major: " + major +
+				" Year: " + year + 
+				" GPA: " + gpa; 
+
 	}
 
-/*
-	public boolean equals(Student other) {
-
-		if(this.score == other.getScore() &&
-			this.name.equals(other.getName())) { //names are the same and scores are the same
-			return true;
-		} 
-		return false;		
-	}
-*/
-	
-	//constructor
-	public Student(String name, int score) {
-		this.name = name;
-		this.score = score;
-	}
 
 
 

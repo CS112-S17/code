@@ -3,7 +3,7 @@
 	@author Sami Rollins
 **/
 
-public class Name {
+public class Name implements Comparable<Name> {
 
 	//data members
 	private String first;
@@ -74,7 +74,28 @@ public class Name {
 
 		}
 		return false;
-	}	
+	}
+
+	public int compareTo(Name other) {
+
+		int lastResult = this.last.compareTo(other.getLast());
+		if(lastResult == 0) {
+			int firstResult = this.first.compareTo(other.getFirst());
+			return firstResult;
+		} else {
+			return lastResult;
+		}
+
+
+
+		// String thisFullName = this.last + this.first;
+		// String otherFullName = other.getLast() + other.getFirst();
+
+		// return (thisFullName.compareTo(otherFullName));
+
+
+	}
+
 
 
 }
