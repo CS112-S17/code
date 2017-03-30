@@ -5,23 +5,54 @@ public class ComparableExample {
 
 	public static void main(String[] args) {
 
-		// String s1 = "banana";
-		// String s2 = "bananas!";
+		// Comparable c = new Comparable();
+
+		Comparable[] items = new Comparable[5];
+		items[0] = "apple";
+		items[1] = "orange";
+		items[2] = "orange";
+		items[3] = "zebra";
+		items[4] = "pineapple";
+
+		boolean isSorted = true;
+
+		int i = 0; 
+		for( ; i < items.length-1; i++) {
+
+			//if the items are not in sorted order
+			if( items[i].compareTo(items[i+1]) > 0 ) {
+				isSorted = false;
+				break;
+			}
+
+		}
+
+		if(isSorted) {
+			System.out.println("List is sorted");
+		} else {
+			System.out.println("Out of order elements found at position: " + i);
+		}
+
+
+		// Comparable s1 = "banana";
+		// Comparable s2 = "bananas!";
 
 		// int result = s1.compareTo(s2);
 		// System.out.println(result);
 
 
-		ArrayList<Name> nameList = new ArrayList<Name>();
-		nameList.add(new Name("Bob", "Smith"));
-		nameList.add(new Name("Sally", "Jones"));
-		nameList.add(new Name("Herb", "Zuniga"));
-		nameList.add(new Name("Doug", "Smith"));
 
-		Collections.sort(nameList);
-		for(Name n: nameList) {
-			System.out.println(n);
-		}
+
+		// ArrayList<Name> nameList = new ArrayList<Name>();
+		// nameList.add(new Name("Bob", "Smith"));
+		// nameList.add(new Name("Sally", "Jones"));
+		// nameList.add(new Name("Herb", "Zuniga"));
+		// nameList.add(new Name("Doug", "Smith"));
+
+		// Collections.sort(nameList);
+		// for(Name n: nameList) {
+		// 	System.out.println(n);
+		// }
 
 		// ArrayList<Integer> intList = new ArrayList<Integer>();
 		// intList.add(4);
